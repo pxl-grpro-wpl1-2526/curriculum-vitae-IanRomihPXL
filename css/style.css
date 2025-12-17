@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Segoe UI, sans-serif;
+    font-size: 1.1rem;
 }
 
 body {
@@ -13,20 +14,107 @@ body {
 
 main {
     width: 67%;
-    border: 10px solid gray;
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
+    border: 0.75rem solid gray;
+    border-top: 0.25rem solid gray;
+    border-bottom: 0.25rem solid gray;
     background-color: lightgray;
-}
 
-main p #cv {
-    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
 }
 
 main div {
     margin: 20px;
+    border: 1px solid red;
 }
 
-main div #naam {
-    color: red;
+.topdiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    justify-content: space-between;
+}
+
+.naamdiv {
+    width: 40%;
+    height: 8rem;
+}
+
+.naam {
+    font-size: 3rem;
+}
+
+.student {
+    font-size: 2rem;
+}
+
+.foto {
+    width: 40%;
+    text-align: right;
+}
+
+.foto img {
+    width: 350px;
+}
+
+.botdiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.leftdiv {
+    width: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    justify-content: normal;
+}
+
+.introductie {
+    width: 90%;
+}
+
+.ervaring {
+    width: 90%;
+}
+
+.opleiding {
+    width: 90%;
+}
+
+.rightdiv {
+    padding-top: 17.5rem;
+    width: 30%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    justify-content: normal;
+}
+
+.hobbies {
+    text-align: right;
+}
+
+.skillInfo {
+    text-align: right;
+}
+
+.cv {
+    position: absolute;
+    font-size: 14px;
+    padding: 5px;
 }
