@@ -5,70 +5,79 @@
     font-size: 1.1rem;
 }
 
+.cv {
+    font-size: 0.75rem;
+    padding: 5px;
+    position: absolute;
+}
+
 body {
+    background-color: #341837;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkslategray;
 }
 
 main {
     width: 67%;
-    border: 0.75rem solid gray;
-    border-top: 0.25rem solid gray;
-    border-bottom: 0.25rem solid gray;
-    background-color: lightgray;
+    background-color: #dddddd;
+
+    border: 0.75rem solid #da33df;
+    border-top: 0.25rem solid #da33df;
+    border-bottom: 0.25rem solid #da33df;
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
-    position: relative;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.15rem;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 main div {
     margin: 20px;
-    border: 1px solid red;
 }
 
 .topdiv {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
     width: 100%;
     height: 8rem;
+
+    display: flex;
     justify-content: space-between;
 }
 
 .naamdiv {
-    width: 40%;
-    height: 8rem;
-}
-
-.naam {
-    font-size: 3rem;
-}
-
-.student {
-    font-size: 2rem;
+    margin-left: 2.5rem;
 }
 
 .foto {
-    width: 40%;
-    text-align: right;
+    width: 37.5%;
+    height: 20rem;
 }
 
 .foto img {
-    width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.botdiv {
+.middiv {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -76,45 +85,40 @@ main div {
     width: 60%;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    position: relative;
-    justify-content: normal;
 }
 
 .introductie {
-    width: 90%;
-}
+    width: 80%;
+    margin-bottom: 1.75rem;
 
-.ervaring {
-    width: 90%;
-}
-
-.opleiding {
-    width: 90%;
 }
 
 .rightdiv {
-    padding-top: 17.5rem;
+    padding-top: 10rem;
     width: 30%;
+    text-align: right;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    position: relative;
-    justify-content: normal;
 }
 
-.hobbies {
-    text-align: right;
+.botdiv {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.skillInfo {
-    text-align: right;
+footer {
+    color: white;
+    width: 100%;
+    margin: 1rem;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.cv {
-    position: absolute;
-    font-size: 14px;
-    padding: 5px;
+.ervaringbeschrijving {
+    margin-top: 0.5rem;
 }
