@@ -145,6 +145,14 @@ footer {
     justify-content: space-evenly;
 }
 
+ul {
+    padding-left: 1.5rem;
+}
+
+.ervaringtitle {
+    margin-bottom: 0.5rem;
+}
+
 .ervaringbeschrijving {
     margin-top: 0.5rem;
 }
