@@ -197,3 +197,73 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
+@media screen and (min-width: 992px) {
+    /*
+    niks om hier te zetten maar is verplicht,
+    als ik alles van css hier in zet werken de andere
+    media-queries niet meer
+     */
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        width: 80%;
+    }
+
+    #topdiv #foto {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #middiv {
+        padding-top: 10rem;
+    }
+
+    #leftdiv {
+        width: 24rem;
+    }
+
+    #rightdiv {
+        width: 20rem;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    #botdiv{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    main {
+        width: 100%;
+    }
+
+    #topdiv #foto {
+        position: absolute;
+        top: 11rem;
+        right: 0;
+    }
+
+    #middiv #rightdiv table {
+        border: 0;
+    }
+
+    #middiv #rightdiv #talen table td {
+        border: 0 solid black;
+        width: 30%;
+    }
+
+    #middiv #rightdiv #talen table tr {
+        background-color: #dddddd;
+    }
+
+    #middiv #rightdiv #talen table tr:nth-child(1) {
+        border-bottom: 2px solid black;
+    }
+
+    #middiv #rightdiv #talen table tr:nth-child(2) {
+        border-bottom: 2px solid black;
+    }
+}
