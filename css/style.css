@@ -5,30 +5,12 @@
     font-size: 1.1rem;
 }
 
-.cv {
-    font-size: 0.75rem;
-    padding: 5px;
-    position: absolute;
-}
-
 body {
     background-color: #341837;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-main {
-    width: 67%;
-    background-color: #dddddd;
-
-    border: 0.75rem solid #da33df;
-    border-top: 0.25rem solid #da33df;
-    border-bottom: 0.25rem solid #da33df;
-
-    display: flex;
-    flex-wrap: wrap;
 }
 
 h1 {
@@ -48,11 +30,29 @@ h4 {
     font-size: 1.1rem;
 }
 
+#cv {
+    font-size: 0.75rem;
+    padding: 5px;
+    position: absolute;
+}
+
+main {
+    width: 67%;
+    background-color: #dddddd;
+
+    border: 0.75rem solid #da33df;
+    border-top: 0.25rem solid #da33df;
+    border-bottom: 0.25rem solid #da33df;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main div {
     margin: 20px;
 }
 
-.topdiv {
+#topdiv {
     width: 100%;
     height: 8rem;
 
@@ -60,26 +60,26 @@ main div {
     justify-content: space-between;
 }
 
-.naamdiv {
+#naamdiv {
     margin-left: 2.5rem;
 }
 
-.naamdiv a {
+#naamdiv a {
     font-size: 1.5rem;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
-.naamdiv a:hover {
+#naamdiv a:hover {
     text-decoration: underline;
 }
 
-.foto {
+#foto {
     width: 37.5%;
     height: 20rem;
 }
 
-.foto img {
+#foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -87,29 +87,58 @@ main div {
 
 img:hover {
     cursor: help;
-    box-shadow: 2px 2px 1px black;
+    box-shadow: 3px 3px 1px black;
 }
 
-.middiv {
+#middiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.leftdiv {
+#leftdiv {
     width: 60%;
 
     display: flex;
     flex-direction: column;
 }
 
-.introductie {
+#leftdiv #introductie {
     width: 80%;
     margin-bottom: 1.75rem;
-
 }
 
-.rightdiv {
+#leftdiv ul {
+    padding-left: 1.5rem;
+}
+
+#leftdiv ul a {
+    color: black;
+    text-decoration: none;
+}
+
+#leftdiv ul a:hover {
+    text-decoration: underline;
+}
+
+#leftdiv #ervaring .ervaringtitle {
+    margin-bottom: 0.5rem;
+}
+
+#leftdiv #ervaring .ervaringbeschrijving {
+    margin-top: 0.5rem;
+}
+
+#leftdiv #opleiding a {
+    color: black;
+    text-decoration: none;
+}
+
+#leftdiv #opleiding a:hover {
+    text-decoration: underline;
+}
+
+#rightdiv {
     padding-top: 10rem;
     width: 30%;
     text-align: right;
@@ -118,7 +147,7 @@ img:hover {
     flex-direction: column;
 }
 
-table {
+#rightdiv #talen table {
     margin-top: 0.5rem;
     border: 3px solid black;
     border-collapse: collapse;
@@ -126,24 +155,33 @@ table {
     text-align: center;
 }
 
-td {
+#rightdiv #talen table td {
     border: 1px solid black;
     width: 30%;
 }
 
-table tr:nth-child(odd) {
+#rightdiv #talen table tr:nth-child(odd) {
     background-color: #f8a6ff;
 }
 
-table tr:nth-child(even) {
+#rightdiv #talen table tr:nth-child(even) {
     background-color: #f9ceff;
 }
 
-.botdiv {
+#botdiv {
     width: 100%;
 
     display: flex;
     justify-content: space-evenly;
+}
+
+#botdiv div a {
+    text-decoration: none;
+    color: black;
+}
+
+#botdiv div a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -158,43 +196,4 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
-}
-
-ul {
-    padding-left: 1.5rem;
-}
-
-ul a {
-    color: black;
-    text-decoration: none;
-}
-
-ul a:hover {
-    text-decoration: underline;
-}
-
-.opleiding a {
-    color: black;
-    text-decoration: none;
-}
-
-.opleiding a:hover {
-    text-decoration: underline;
-}
-
-.ervaringtitle {
-    margin-bottom: 0.5rem;
-}
-
-.ervaringbeschrijving {
-    margin-top: 0.5rem;
-}
-
-.botdiv div a {
-    text-decoration: none;
-    color: black;
-}
-
-.botdiv div a:hover {
-    text-decoration: underline;
 }
