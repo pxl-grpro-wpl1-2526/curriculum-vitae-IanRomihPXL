@@ -75,6 +75,11 @@ main div {
     object-fit: cover;
 }
 
+img:hover {
+    cursor: help;
+    box-shadow: 2px 2px 1px black;
+}
+
 .middiv {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +119,14 @@ table {
 td {
     border: 1px solid black;
     width: 30%;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f8a6ff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9ceff;
 }
 
 .botdiv {
